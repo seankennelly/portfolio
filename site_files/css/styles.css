@@ -1,0 +1,283 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* END CSS RESET */
+
+/* -------------
+  PAGE STANDARDS
+  ------------ */
+body {
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* -----------
+  NAV & FOOTER
+  -----------*/
+
+.navbar .container-fluid {
+  padding: 0 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .navbar .container-fluid {
+    padding: 0 1.5rem 0;
+  }
+}
+
+.navbar-brand {
+  font-size: calc(0.75rem + 0.5vw);
+}
+
+.navbar-text {
+  font-size: 0.8rem;
+}
+
+footer {
+  margin-top: 2rem;
+  /* Prevents gap under footer */
+  overflow: hidden;
+  width: 100%;
+  background-color: #F8F9FA;
+}
+
+footer .links a {
+  display: block;
+}
+
+.social-icon {
+  text-align: center;
+  width: 25px;
+}
+
+@media (min-width: 768px) {
+  footer .links a {
+    display: inline-block;
+  }
+
+  footer .social-icon {
+    display: inline-block;
+  }
+}
+
+#footer-seal {
+  width: 100%;
+  max-width: 60px;
+  height: 60px;
+}
+
+footer small {
+  font-size: 0.75rem;
+}
+
+/* ------
+  Header 
+  -----*/
+.header {
+  padding: 3rem 0 2rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header h2 {
+  font-size: 1.3rem;
+}
+
+.header p {
+  width: 90%;
+  margin: 1.5rem auto 0;
+}
+
+/* ---------------
+  Project Displays
+  -------------- */
+.project-display {
+  position: relative;
+  margin: 2rem 0 0;
+  padding: 0;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.258);
+}
+
+@media (min-width: 700px) {
+  .project-display {
+    width: 45%;
+    margin: 1rem 0.5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-display {
+    width: 30%;
+    margin: 1.5rem 0.5rem 0;
+  }
+}
+
+.project-display img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.project-display .float-text {
+  width: 70%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  padding: 16px 32px;
+}
+
+.project-display h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-display h4 {
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgb(187, 184, 184);
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-display p {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-weight: 200;
+
+}
+
+.project-display:hover img {
+  opacity: 0.3;
+}
+
+.project-display:hover .float-text {
+  opacity: 1;
+}
