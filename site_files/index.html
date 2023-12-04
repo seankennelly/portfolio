@@ -12,12 +12,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Google Font: Roboto & IBM Plex Mono -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet">
-    <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- My Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
   <title>Seán Kennelly | Portfolio</title>
@@ -42,79 +43,146 @@
   <!-- END Nav -->
   <div class="container-fluid px-5">
     <!-- Header -->
-    <div class="row header">
+    <header>
+      <img id="me-img" class="animate__animated animate__backInLeft" src="images/me.jpg"
+        alt="A picture of me holding a book">
       <h1>Seán Kennelly</h1>
-      <h2>Web Developer</h2>
-      <p>Student developer skilled with HTML, CSS, JS & Python</p>
-    </div>
-    <!-- Content -->
-    <div class="row d-flex justify-content-center">
-      <div class="project-display">
-        <a href="https://www.moonrisematernity.com/" target=“_blank”>
-          <img src="images/moonrise.jpeg" alt="A screengrab of the website 'Moonrise Maternity'">
-          <div class="float-text">
-            <h3>Moonrise Maternity</h3>
-            <h4>&lt;Design, build, hosting, administration/&gt;</h4>
-            <p>This site makes use of single-page design and Bootstrap components for an elegant way of displaying large
-              amounts of information</p>
-          </div>
-        </a>
+      <p class="tagline">Web Developer</p>
+      <div class="negative-wrapper">
+        <p class="negative">Student developer skilled with HTML, CSS, JS & Python</p>
       </div>
-      <div class="project-display">
-        <a href="https://www.witchcraftandvagrancy.com/" target=“_blank”>
-          <img src="images/twava.jpeg"
-            alt="A screengrab of the website for the Brighton folk band 'The Witchcraft & Vagrancy Act'">
-          <div class="float-text">
-            <h3>The Witchcraft & Vagrancy Act</h3>
-            <h4>&lt;Build, hosting, administration/&gt;</h4>
-            <p>A unique project for me as the client already had comprehensive designs. This presented its own
-              challenges, as I had to reconcile their vision with the practicalities of responsive web design</p>
+      <p>Having worked in live music for years, I decided on a career move into Web Development. After studying in
+        Australia, I moved back to the UK to continue my growth as a developer. My project experience so far has seen me
+        launch seven websites (including this one). I'm inspired by diverse design, exciting digital experiences, and
+        inclusive products.</p>
+    </header>
+
+    <main>
+      <section> <!-- Main Content -->
+        <div class="projects-wrapper row d-flex justify-content-center">
+          <div class="negative-wrapper">
+            <h2 class="negative wow animate__animated animate__slideInRight">Projects</h2>
           </div>
-        </a>
-      </div>
-      <div class="project-display">
-        <a href="https://www.macrotech-contracts.co.uk/" target=“_blank”>
-          <img src="images/macrotech.png" alt="A screengrab of the website for a local construction business">
-          <div class="float-text">
-            <h3>Macrotech Contracts Ltd</h3>
-            <h4>&lt;Design, build, hosting, administration/&gt;</h4>
-            <p>My first major project. Its large site structure and quantity of technical information produced layout
-              challenges</p>
+          <div class="project-display">
+            <a href="https://www.moonrisematernity.com/" target=“_blank”>
+              <img src="images/moonrise.jpeg" alt="A screengrab of the website 'Moonrise Maternity'">
+              <div class="float-text">
+                <h3>Moonrise Maternity</h3>
+                <h4>&lt;Design, build, hosting, administration/&gt;</h4>
+                <p>This site makes use of single-page design and Bootstrap components for an elegant way of displaying
+                  large
+                  amounts of information</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="project-display">
-        <a href="#" target=“_blank”>
-          <img src="images/sbtb.jpeg" alt="A screengrab for a personal project website about hiking">
-          <div class="float-text">
-            <h3>Saved By The Bush</h3>
-            <h4>&lt;Design, build, hosting, administration/&gt;</h4>
-            <p>A "passion project", this site has been redesigned each time my skillset has been expanded</p>
+          <div class="project-display">
+            <a href="https://www.witchcraftandvagrancy.com/" target=“_blank”>
+              <img src="images/twava.jpeg"
+                alt="A screengrab of the website for the Brighton folk band 'The Witchcraft & Vagrancy Act'">
+              <div class="float-text">
+                <h3>The Witchcraft & Vagrancy Act</h3>
+                <h4>&lt;Build, hosting, administration/&gt;</h4>
+                <p>A unique project for me as the client already had comprehensive designs. This presented its own
+                  challenges, as I had to reconcile their vision with the practicalities of responsive web design</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="project-display">
-        <a href="https://www.ivybridgewalkingclub.com/" target=“_blank”>
-          <img src="images/iwc.jpeg" alt="A screengrab for a local walking club's website">
-          <div class="float-text">
-            <h3>Ivybridge Walking Club</h3>
-            <h4>&lt;Built using site-builder/&gt;</h4>
-            <p>The challenge with this site was handing it over to its new owners and making sure they could update and
-              maintain it. For this purpose I created a detailed 80-page process manual</p>
+          <div class="project-display">
+            <a href="https://www.macrotech-contracts.co.uk/" target=“_blank”>
+              <img src="images/macrotech.png" alt="A screengrab of the website for a local construction business">
+              <div class="float-text">
+                <h3>Macrotech Contracts Ltd</h3>
+                <h4>&lt;Design, build, hosting, administration/&gt;</h4>
+                <p>My first major project. Its large site structure and quantity of technical information produced
+                  layout
+                  challenges</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="project-display">
-        <a href="https://www.shufflethedeck.co.uk/" target=“_blank”>
-          <img src="images/shuffle.png" alt="A screengrab for a local dance troup's website">
-          <div class="float-text">
-            <h3>Shuffle The Deck Dancers</h3>
-            <h4>&lt;Built using site-builder/&gt;</h4>
-            <p>A small and simple project that gave me experience dealing with clients</p>
+          <div class="project-display">
+            <a href="#" target=“_blank”>
+              <img src="images/sbtb.jpeg" alt="A screengrab for a personal project website about hiking">
+              <div class="float-text">
+                <h3>Saved By The Bush</h3>
+                <h4>&lt;Design, build, hosting, administration/&gt;</h4>
+                <p>A "passion project", this site has been redesigned each time my skillset has been expanded</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-    </div>
+          <div class="project-display">
+            <a href="https://www.ivybridgewalkingclub.com/" target=“_blank”>
+              <img src="images/iwc.jpeg" alt="A screengrab for a local walking club's website">
+              <div class="float-text">
+                <h3>Ivybridge Walking Club</h3>
+                <h4>&lt;Built using site-builder/&gt;</h4>
+                <p>The challenge with this site was handing it over to its new owners and making sure they could update
+                  and
+                  maintain it. For this purpose I created a detailed 80-page process manual</p>
+              </div>
+            </a>
+          </div>
+          <div class="project-display">
+            <a href="https://www.shufflethedeck.co.uk/" target=“_blank”>
+              <img src="images/shuffle.png" alt="A screengrab for a local dance troup's website">
+              <div class="float-text">
+                <h3>Shuffle The Deck Dancers</h3>
+                <h4>&lt;Built using site-builder/&gt;</h4>
+                <p>A small and simple project that gave me experience dealing with clients</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section> <!-- Relevant Experience-->
+        <div class="experience row d-flex justify-content-center">
+          <h2 class="negative wow animate__animated animate__slideInRight">Relevant Experience</h2>
+
+          <div class="exp-container col-12 col-lg-6 col-xl-4">
+            <h3>Design & Build</h3>
+            <ul>
+              <li>Designed four active sites</li>
+              <li>Built five active sites</li>
+              <li>Used Bootstrap for responsive design</li>
+            </ul>
+            <hr>
+          </div>
+
+          <div class="exp-container col-12 col-lg-6 col-xl-4">
+            <h3>Working With Clients</h3>
+            <ul>
+              <li>Met with clients to discuss project objectives, client needs and project scopes</li>
+              <li>Provided clients with designs and documentation</li>
+              <li>Completed projects to the satisfaction of clients</li>
+              <li>Invoiced clients and provided them with website analytics</li>
+            </ul>
+            <hr>
+          </div>
+
+          <div class="exp-container col-12 col-lg-6 col-xl-4">
+            <h3>Administration</h3>
+            <ul>
+              <li>Management of hosting on behalf of clients</li>
+              <li>Use of FTP to upload and manage site files</li>
+              <li>Purchasing of Domains on behalf of clients</li>
+              <li>Purchasing and application of SSL certificates</li>
+              <li>Currently administer seven active sites</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section> <!-- Courses -->
+        
+      </section>
+
+      <section> <!-- C.V -->
+
+      </section>
+    </main>
   </div>
 
   <footer class="text-center text-lg-start text-light bg-dark">
@@ -122,13 +190,12 @@
       <div class="container text-center text-md-start mt-5 mt-lg-4">
         <div class="row mt-3">
           <!-- Column: Contact Details -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 p-0">
-            <!-- Links -->
+          <div class="contact col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 px-0">
             <h6 class="text-uppercase fw-bold mb-3 mb-md-2">Contact</h6>
             <p>
               sean.kennelly@hotmail.co.uk
             </p>
-            <p>07908719455</p>
+            <hr>
           </div>
           <!-- Column: Social links -->
           <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -136,18 +203,26 @@
             <h6 class="text-uppercase fw-bold mb-3 mb-md-2">
               Links
             </h6>
-              <a href="#">
-                <img class="social-icon" src="images/linkedin.png" alt="The logo for the social media site LinkedIn">
+            <div>
+              <a href="https://github.com/seankennelly" target="_blank" rel="noopener">
+                <img class="social-icon" src="images/logo_github.png" alt="The logo for the git repository site Github">
               </a>
-              <a href="#">
-                <img class="social-icon" src="images/insta.png" alt="The logo for the social media site Instagram">
+              <a href="#" target="_blank" rel="noopener">
+                <img class="social-icon" src="images/logo_linkedin.png"
+                  alt="The logo for the social media site LinkedIn">
               </a>
+              <a href="#" target="_blank" rel="noopener">
+                <img class="social-icon" src="images/logo_insta.png" alt="The logo for the social media site Instagram">
+              </a>
+            </div>
+            <hr>
           </div>
           <!-- Column: GreenGeeks seal -->
           <div class="col-md-2 col-lg-4 col-xl-3 mx-0 mb-4">
             <!-- GreenGeeks Seal Code -->
             <div><a href="#" onclick="ggs_ggseal()"><img id="footer-seal"
-                  src="https://static.greengeeks.com/ggseal/Green_22.png"></a>
+                  src="https://static.greengeeks.com/ggseal/Green_22.png"
+                  alt="Logo for GreenGeeks hosting company indicating environmentally friendly website"></a>
               <script>function ggs_ggseal() { window.open("https://my.greengeeks.com/seal/", "_blank") }</script>
             </div>
             <!-- End GreenGeeks Seal Code -->
@@ -157,7 +232,7 @@
       </div>
     </section>
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4">
       <small>
         <p>Copyright &copy;
           <script>document.write(new Date().getFullYear())</script> Seán Kennelly - All Rights Reserved
@@ -169,6 +244,12 @@
 
   <!-- Bootstrap JS -->
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- WOW.js (Scroll animations: https://www.delac.io/WOW/) -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="js/portfolio.js"></script>
 </body>
 
 </html>
