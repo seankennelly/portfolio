@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images_assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images_assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images_assets/favicons/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -34,38 +34,41 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-start justify-content-lg-end" id="navbarText">
-        <span class="navbar-text">
+        <div class="links">
+          <span class="navbar-text"><a href="#anchor-projects">Projects</a></span>
+          <span class="navbar-text"><a href="#anchor-exp">Experience</a></span>
+          <span class="navbar-text"><a href="#anchor-courses">Courses</a></span>
+          <span class="navbar-text"><a href="#anchor-cv">Curriculum Vitae</a></span>
+        </div>
+        <div class="navbar-text" id="email-address">
           sean.kennelly@hotmail.co.uk
-        </span>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- END Nav -->
+
   <div class="container-fluid px-5">
     <!-- Header -->
     <header>
-      <img id="me-img" class="animate__animated animate__backInLeft" src="images/me.jpg"
+      <img id="me-img" class="animate__animated animate__backInLeft" src="images_assets/me.jpg"
         alt="A picture of me holding a book">
       <h1>Seán Kennelly</h1>
-      <p class="tagline">Web Developer</p>
-      <div class="negative-wrapper">
-        <p class="negative">Student developer skilled with HTML, CSS, JS & Python</p>
-      </div>
+      <p class="tagline negative-content">Web Developer</p>
       <p>Having worked in live music for years, I decided on a career move into Web Development. After studying in
         Australia, I moved back to the UK to continue my growth as a developer. My project experience so far has seen me
         launch seven websites (including this one). I'm inspired by diverse design, exciting digital experiences, and
-        inclusive products.</p>
+        inclusive products. In my free time I'm usually working on my latest  album of rowdy music.</p>
     </header>
 
     <main>
-      <section> <!-- Main Content -->
+      <section id="anchor-projects"> <!-- Projects -->
         <div class="projects-wrapper row d-flex justify-content-center">
           <div class="negative-wrapper">
-            <h2 class="negative wow animate__animated animate__slideInRight">Projects</h2>
+            <h2 class="negative-content wow animate__animated animate__slideInRight">Projects</h2>
           </div>
           <div class="project-display">
             <a href="https://www.moonrisematernity.com/" target=“_blank”>
-              <img src="images/moonrise.jpeg" alt="A screengrab of the website 'Moonrise Maternity'">
+              <img src="images_assets/moonrise.jpeg" alt="A screengrab of the website 'Moonrise Maternity'">
               <div class="float-text">
                 <h3>Moonrise Maternity</h3>
                 <h4>&lt;Design, build, hosting, administration/&gt;</h4>
@@ -77,7 +80,7 @@
           </div>
           <div class="project-display">
             <a href="https://www.witchcraftandvagrancy.com/" target=“_blank”>
-              <img src="images/twava.jpeg"
+              <img src="images_assets/twava.jpeg"
                 alt="A screengrab of the website for the Brighton folk band 'The Witchcraft & Vagrancy Act'">
               <div class="float-text">
                 <h3>The Witchcraft & Vagrancy Act</h3>
@@ -89,7 +92,7 @@
           </div>
           <div class="project-display">
             <a href="https://www.macrotech-contracts.co.uk/" target=“_blank”>
-              <img src="images/macrotech.png" alt="A screengrab of the website for a local construction business">
+              <img src="images_assets/macrotech.png" alt="A screengrab of the website for a local construction business">
               <div class="float-text">
                 <h3>Macrotech Contracts Ltd</h3>
                 <h4>&lt;Design, build, hosting, administration/&gt;</h4>
@@ -101,7 +104,7 @@
           </div>
           <div class="project-display">
             <a href="#" target=“_blank”>
-              <img src="images/sbtb.jpeg" alt="A screengrab for a personal project website about hiking">
+              <img src="images_assets/sbtb.jpeg" alt="A screengrab for a personal project website about hiking">
               <div class="float-text">
                 <h3>Saved By The Bush</h3>
                 <h4>&lt;Design, build, hosting, administration/&gt;</h4>
@@ -111,10 +114,10 @@
           </div>
           <div class="project-display">
             <a href="https://www.ivybridgewalkingclub.com/" target=“_blank”>
-              <img src="images/iwc.jpeg" alt="A screengrab for a local walking club's website">
+              <img src="images_assets/iwc.jpeg" alt="A screengrab for a local walking club's website">
               <div class="float-text">
                 <h3>Ivybridge Walking Club</h3>
-                <h4>&lt;Built using site-builder/&gt;</h4>
+                <h4>&lt;Built with site-creation platform, administration/&gt;</h4>
                 <p>The challenge with this site was handing it over to its new owners and making sure they could update
                   and
                   maintain it. For this purpose I created a detailed 80-page process manual</p>
@@ -123,10 +126,10 @@
           </div>
           <div class="project-display">
             <a href="https://www.shufflethedeck.co.uk/" target=“_blank”>
-              <img src="images/shuffle.png" alt="A screengrab for a local dance troup's website">
+              <img src="images_assets/shuffle.png" alt="A screengrab for a local dance troup's website">
               <div class="float-text">
                 <h3>Shuffle The Deck Dancers</h3>
-                <h4>&lt;Built using site-builder/&gt;</h4>
+                <h4>&lt;Built with site-creation platform, administration/&gt;</h4>
                 <p>A small and simple project that gave me experience dealing with clients</p>
               </div>
             </a>
@@ -134,9 +137,9 @@
         </div>
       </section>
 
-      <section> <!-- Relevant Experience-->
+      <section id="anchor-exp"> <!-- Relevant Experience-->
         <div class="experience row d-flex justify-content-center">
-          <h2 class="negative wow animate__animated animate__slideInRight">Relevant Experience</h2>
+          <h2 class="negative-content wow animate__animated animate__slideInRight">Relevant Experience</h2>
 
           <div class="exp-container col-12 col-lg-6 col-xl-4">
             <h3>Design & Build</h3>
@@ -169,68 +172,201 @@
               <li>Currently administer seven active sites</li>
             </ul>
           </div>
-
         </div>
 
       </section>
 
+      <div class="courses-cv-wrapper row d-flex justify-content-center">
+        <div class="col-12 col-lg-6 justify-content-center p-0">
+          <section class="courses" id="anchor-courses"> <!-- Courses -->
+            <h2 class="negative-content wow animate__animated animate__slideInLeft">Courses</h2>
+            <!-- Non carousel display (small screens) -->
+            <div class="card-container row d-lg-none">
 
-      <section> <!-- Courses -->
-        
-      </section>
+              <div class="col-12 col-lg-4">
 
-      <section> <!-- C.V -->
+                <div class="card">
+                  <img src="images_assets/kent.png" class="card-img-top" alt="The logo for the Kent Institute Australia">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Kent Institute</h5> -->
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Sydney, Australia</h6>
+                    <p class="card-text">Full time vocational course that covered many diverse aspects of Web
+                      and Software Development, including (but not limited to):</p>
+                    <ul>
+                      <li>Coding languages (HTML, CSS, JavaScript, Python, PHP, SQL)</li>
+                      <li>Real-world projects including websites, databases and hosting</li>
+                      <li>Development of UI and UX</li>
+                      <li>Application of SEO</li>
+                      <li>Client-based approaches to projects</li>
+                    </ul>
+                    <a href="https://kent.edu.au/" class="btn btn-light">Kent Institute</a>
+                  </div>
+                </div>
+              </div>
 
-      </section>
+              <div class="col-12 col-lg-4">
+                <div class="card">
+                  <img src="images_assets/codecademy.png" class="card-img-top"
+                    alt="The logo for the learning resource website Codecademy">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title">Codecademy</h5> -->
+                    <p class="card-text">Through Codecademy I have completed the following courses:</p>
+                    <ul>
+                      <li>Learn HTML</li>
+                      <li>Learn CSS</li>
+                      <li>Learn JavaScript</li>
+                    </ul>
+                    <p>I am currently working on the Full Stack Engineer career path course.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kreativestorm</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's
+                      content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel display (large screens)-->
+            <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-bs-theme="dark">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- Card 1 -->
+                <div class="carousel-item active" data-bs-theme="light">
+                  <div class="card">
+                    <img src="images_assets/kent.png" class="card-img-top" alt="The logo for the Kent Institute Australia">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Kent Institute</h5> -->
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Sydney, Australia</h6>
+                      <p class="card-text">Full time vocational course that covered many diverse aspects of Web
+                        and Software Development, including (but not limited to):</p>
+                      <ul>
+                        <li>Coding languages (HTML, CSS, JavaScript, Python, PHP, SQL)</li>
+                        <li>Real-world projects including websites, databases and hosting</li>
+                        <li>Development of UI and UX</li>
+                        <li>Application of SEO</li>
+                        <li>Client-based approaches to projects</li>
+                      </ul>
+                      <a href="https://kent.edu.au/" class="btn btn-light">Kent Institute</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="carousel-item" data-bs-theme="light">
+                  <div class="card">
+                    <img src="images_assets/codecademy.png" class="card-img-top"
+                      alt="The logo for the learning resource website Codecademy">
+                    <div class="card-body">
+                      <!-- <h5 class="card-title">Codecademy</h5> -->
+                      <p class="card-text">Through Codecademy I have completed the following courses:</p>
+                      <ul>
+                        <li>Learn HTML</li>
+                        <li>Learn CSS</li>
+                        <li>Learn JavaScript</li>
+                      </ul>
+                      <p>I am currently working on the Full Stack Engineer career path course.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="carousel-item" data-bs-theme="light">
+                  <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kreativestorm</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-12 col-lg-6 p-0">
+          <section id="anchor-cv"> <!-- C.V -->
+            <div class="cv">
+              <h2 class="negative-content wow animate__animated animate__slideInRight">Curriculum Vitae
+              </h2>
+
+              <a href="images_assets/sean_kennelly_cv.pdf">
+                <img src="images_assets/cv.png"
+                  alt="A screenshot of my C.V, which can be accessed in PDF form by clicking this image">
+              </a>
+
+            </div>
+          </section>
+        </div>
+      </div>
+
+
     </main>
   </div>
 
   <footer class="text-center text-lg-start text-light bg-dark">
-    <section>
-      <div class="container text-center text-md-start mt-5 mt-lg-4">
-        <div class="row mt-3">
-          <!-- Column: Contact Details -->
-          <div class="contact col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 px-0">
-            <h6 class="text-uppercase fw-bold mb-3 mb-md-2">Contact</h6>
-            <p>
-              sean.kennelly@hotmail.co.uk
-            </p>
-            <hr>
-          </div>
-          <!-- Column: Social links -->
-          <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-3 mb-md-2">
-              Links
-            </h6>
-            <div>
-              <a href="https://github.com/seankennelly" target="_blank" rel="noopener">
-                <img class="social-icon" src="images/logo_github.png" alt="The logo for the git repository site Github">
-              </a>
-              <a href="#" target="_blank" rel="noopener">
-                <img class="social-icon" src="images/logo_linkedin.png"
-                  alt="The logo for the social media site LinkedIn">
-              </a>
-              <a href="#" target="_blank" rel="noopener">
-                <img class="social-icon" src="images/logo_insta.png" alt="The logo for the social media site Instagram">
-              </a>
-            </div>
-            <hr>
-          </div>
-          <!-- Column: GreenGeeks seal -->
-          <div class="col-md-2 col-lg-4 col-xl-3 mx-0 mb-4">
-            <!-- GreenGeeks Seal Code -->
-            <div><a href="#" onclick="ggs_ggseal()"><img id="footer-seal"
-                  src="https://static.greengeeks.com/ggseal/Green_22.png"
-                  alt="Logo for GreenGeeks hosting company indicating environmentally friendly website"></a>
-              <script>function ggs_ggseal() { window.open("https://my.greengeeks.com/seal/", "_blank") }</script>
-            </div>
-            <!-- End GreenGeeks Seal Code -->
-          </div>
+    <div class="container text-center text-md-start mt-5 mt-lg-4">
+      <div class="row mt-3">
+        <!-- Column: Contact Details -->
+        <div class="contact col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 px-0">
+          <h6 class="text-uppercase fw-bold mb-3 mb-md-2">Contact</h6>
+          <p>
+            sean.kennelly@hotmail.co.uk
+          </p>
+          <hr>
         </div>
-        <!-- Grid row -->
+        <!-- Column: Social links -->
+        <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-3 mb-md-2">
+            Links
+          </h6>
+          <div>
+            <a href="https://github.com/seankennelly" target="_blank" rel="noopener">
+              <img class="social-icon" src="images_assets/logo_github.png" alt="The logo for the git repository site Github">
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <img class="social-icon" src="images_assets/logo_linkedin.png" alt="The logo for the social media site LinkedIn">
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <img class="social-icon" src="images_assets/logo_insta.png" alt="The logo for the social media site Instagram">
+            </a>
+          </div>
+          <hr>
+        </div>
+        <!-- Column: GreenGeeks seal -->
+        <div class="col-md-2 col-lg-4 col-xl-3 mx-0 mb-4">
+          <!-- GreenGeeks Seal Code -->
+          <div><a href="#" onclick="ggs_ggseal()"><img id="footer-seal"
+                src="https://static.greengeeks.com/ggseal/Green_22.png"
+                alt="Logo for GreenGeeks hosting company indicating environmentally friendly website"></a>
+            <script>function ggs_ggseal() { window.open("https://my.greengeeks.com/seal/", "_blank") }</script>
+          </div>
+          <!-- End GreenGeeks Seal Code -->
+        </div>
       </div>
-    </section>
+      <!-- Grid row -->
+    </div>
+
     <!-- Copyright -->
     <div class="text-center p-4">
       <small>
@@ -249,6 +385,7 @@
   <script>
     new WOW().init();
   </script>
+  <!-- My JS -->
   <script src="js/portfolio.js"></script>
 </body>
 
